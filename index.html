@@ -164,6 +164,17 @@
   .reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
   .reveal.vis{opacity:1;transform:translateY(0)}
 
+  .proj-thumb-link{
+    display:block;
+    text-decoration:none;
+  }
+
+  .proj-thumb-link:hover .proj-thumb{
+    transform:scale(1.03);
+    transition:0.3s ease;
+    cursor:pointer;
+  }
+
   @media(max-width:768px){
     nav{padding:14px 20px}
     .nav-links{display:none}
@@ -197,13 +208,13 @@
   <div class="hero-dots"></div>
   <div class="hero-inner">
     <div class="hero-text">
-      <div class="eyebrow">Portfolio · 2025</div>
+      <div class="eyebrow">Portfolio </div>
       <h1>Khwannet<br><em>Suwannasri</em></h1>
-      <p class="hero-role">Information Technology Graduate · Frontend &amp; UX/UI Enthusiast</p>
+      <p class="hero-role">Information Technology Graduate · Frontend & UX/UI Enthusiast</p>
       <p class="hero-bio">Fresh graduate passionate about web development, UX/UI design, and creating responsive modern digital experiences.</p>
       <div class="hero-btns">
         <a href="#projects" class="btn btn-primary"><i class="fas fa-folder-open"></i> View Projects</a>
-        <a href="#" class="btn btn-secondary"><i class="fas fa-download"></i> Download Resume</a>
+       
       </div>
     </div>
     <div class="hero-visual">
@@ -248,63 +259,138 @@
   <div class="sec-ey">Expertise</div>
   <h2>Skills &amp; <em>Tools</em></h2>
   <div class="skills-grid">
-    <div class="skill-row reveal"><div class="skill-top"><div class="skill-name"><span class="skill-ico">🌐</span>HTML</div><span class="skill-pct">95%</span></div><div class="bar-track"><div class="bar-fill" data-pct="95"></div></div></div>
-    <div class="skill-row reveal"><div class="skill-top"><div class="skill-name"><span class="skill-ico">🎨</span>CSS</div><span class="skill-pct">90%</span></div><div class="bar-track"><div class="bar-fill" data-pct="90"></div></div></div>
-    <div class="skill-row reveal"><div class="skill-top"><div class="skill-name"><span class="skill-ico">⚡</span>JavaScript</div><span class="skill-pct">85%</span></div><div class="bar-track"><div class="bar-fill" data-pct="85"></div></div></div>
-    <div class="skill-row reveal"><div class="skill-top"><div class="skill-name"><span class="skill-ico">✏️</span>UX/UI Design</div><span class="skill-pct">88%</span></div><div class="bar-track"><div class="bar-fill" data-pct="88"></div></div></div>
-    <div class="skill-row reveal"><div class="skill-top"><div class="skill-name"><span class="skill-ico">🖼️</span>Figma</div><span class="skill-pct">85%</span></div><div class="bar-track"><div class="bar-fill" data-pct="85"></div></div></div>
-    <div class="skill-row reveal"><div class="skill-top"><div class="skill-name"><span class="skill-ico">📱</span>Responsive Design</div><span class="skill-pct">90%</span></div><div class="bar-track"><div class="bar-fill" data-pct="90"></div></div></div>
-    <div class="skill-row reveal"><div class="skill-top"><div class="skill-name"><span class="skill-ico">📲</span>Kotlin (Android)</div><span class="skill-pct">75%</span></div><div class="bar-track"><div class="bar-fill" data-pct="75"></div></div></div>
-    <div class="skill-row reveal"><div class="skill-top"><div class="skill-name"><span class="skill-ico">🗄️</span>MySQL</div><span class="skill-pct">80%</span></div><div class="bar-track"><div class="bar-fill" data-pct="80"></div></div></div>
-    <div class="skill-row reveal"><div class="skill-top"><div class="skill-name"><span class="skill-ico">🔥</span>Firebase</div><span class="skill-pct">78%</span></div><div class="bar-track"><div class="bar-fill" data-pct="78"></div></div></div>
-    <div class="skill-row reveal"><div class="skill-top"><div class="skill-name"><span class="skill-ico">📊</span>Microsoft 365</div><span class="skill-pct">85%</span></div><div class="bar-track"><div class="bar-fill" data-pct="85"></div></div></div>
+    <div class="skill-row reveal"><div class="skill-top"><div class="skill-name"><span class="skill-ico"></span>HTML</div><span class="skill-pct">90%</span></div><div class="bar-track"><div class="bar-fill" data-pct="95"></div></div></div>
+    <div class="skill-row reveal"><div class="skill-top"><div class="skill-name"><span class="skill-ico"></span>CSS</div><span class="skill-pct">80%</span></div><div class="bar-track"><div class="bar-fill" data-pct="90"></div></div></div>
+    <div class="skill-row reveal"><div class="skill-top"><div class="skill-name"><span class="skill-ico"></span>JavaScript</div><span class="skill-pct">75%</span></div><div class="bar-track"><div class="bar-fill" data-pct="85"></div></div></div>
+    <div class="skill-row reveal"><div class="skill-top"><div class="skill-name"><span class="skill-ico"></span>UX/UI Design</div><span class="skill-pct">85%</span></div><div class="bar-track"><div class="bar-fill" data-pct="88"></div></div></div>
+    <div class="skill-row reveal"><div class="skill-top"><div class="skill-name"><span class="skill-ico"></span>Figma</div><span class="skill-pct">85%</span></div><div class="bar-track"><div class="bar-fill" data-pct="85"></div></div></div>
+    <div class="skill-row reveal"><div class="skill-top"><div class="skill-name"><span class="skill-ico"></span>Responsive Design</div><span class="skill-pct">70%</span></div><div class="bar-track"><div class="bar-fill" data-pct="90"></div></div></div>
+    <div class="skill-row reveal"><div class="skill-top"><div class="skill-name"><span class="skill-ico"></span>Kotlin (Android)</div><span class="skill-pct">65%</span></div><div class="bar-track"><div class="bar-fill" data-pct="75"></div></div></div>
+    <div class="skill-row reveal"><div class="skill-top"><div class="skill-name"><span class="skill-ico"></span>MySQL</div><span class="skill-pct">80%</span></div><div class="bar-track"><div class="bar-fill" data-pct="80"></div></div></div>
+    <div class="skill-row reveal"><div class="skill-top"><div class="skill-name"><span class="skill-ico"></span>Firebase</div><span class="skill-pct">50%</span></div><div class="bar-track"><div class="bar-fill" data-pct="78"></div></div></div>
+    <div class="skill-row reveal"><div class="skill-top"><div class="skill-name"><span class="skill-ico"></span>Microsoft 365</div><span class="skill-pct">70%</span></div><div class="bar-track"><div class="bar-fill" data-pct="85"></div></div></div>
   </div>
 </section>
 
 <section id="projects" style="padding-top:0">
-  <div class="sec-ey">Work</div>
-  <h2>Featured <em>Projects</em></h2>
+  <div class="sec-ey">Experience</div>
+  <h2>Work <em>Experience</em></h2>
+
   <div class="projects-grid">
+
     <div class="proj-card reveal">
-      <div class="proj-thumb pt-0">🌿</div>
+
+      <a href="https://greengarden.cpkku.com/" target="_blank" class="proj-thumb-link">
+        <div class="proj-thumb pt-0">🌿</div>
+      </a>
+
       <div class="proj-body">
-        <div class="proj-title">Multi-Vendor Plant Marketplace</div>
-        <div class="proj-desc">แพลตฟอร์ม Marketplace สำหรับซื้อขายต้นไม้ออนไลน์แบบหลายร้านค้า</div>
-        <div class="tags"><span class="tag-t">React</span><span class="tag-t">Firebase</span><span class="tag-t">Tailwind CSS</span></div>
-        <div class="tags"><span class="tag-f">จัดการร้านค้า</span><span class="tag-f">กรองสินค้า</span><span class="tag-f">ตะกร้าสินค้า</span></div>
-        <div class="proj-links"><a href="#" class="proj-link pl-gh"><i class="fab fa-github"></i> GitHub</a><a href="#" class="proj-link pl-demo"><i class="fas fa-external-link-alt"></i> Demo</a></div>
+        <div class="proj-title">
+          Full Stack Web Developer – AI Smart Plant Marketplace Platform
+        </div>
+
+        <div class="proj-desc">
+          Designed and developed an AI-powered plant marketplace and chatbot platform titled
+          “AI Smart Plant Marketplace Platform with Image Analysis and Chatbot System.”
+          Developed the system using Laravel, CSS, and JavaScript.
+        </div>
+
+        <div class="tags">
+          <span class="tag-t">Laravel</span>
+          <span class="tag-t">JavaScript</span>
+          <span class="tag-t">CSS</span>
+          <span class="tag-t">MySQL</span>
+        </div>
+
+        <div class="tags">
+          <span class="tag-f">AI Chatbot</span>
+          <span class="tag-f">Marketplace System</span>
+          <span class="tag-f">Image Analysis</span>
+        </div>
+
+        <div class="proj-links">
+          
+
+          <a href="https://greengarden.cpkku.com/" target="_blank" class="proj-link pl-demo">
+            <i class="fas fa-external-link-alt"></i> Live Demo
+          </a>
+        </div>
       </div>
     </div>
+
     <div class="proj-card reveal">
-      <div class="proj-thumb pt-1">📅</div>
+
+      <a href="https://www.figma.com/design/McWHpUBwKlwz4hcdcxE9ZH/Untitled?node-id=0-1&t=8DDHk4AXGKTbvUvd-1" target="_blank" class="proj-thumb-link">
+        <div class="proj-thumb pt-1">🌏</div>
+      </a>
+
       <div class="proj-body">
-        <div class="proj-title">Workshop Booking System</div>
-        <div class="proj-desc">ระบบจองเวิร์กชอปออนไลน์สำหรับจองคลาสและกิจกรรม</div>
-        <div class="tags"><span class="tag-t">React</span><span class="tag-t">Node.js</span><span class="tag-t">MySQL</span></div>
-        <div class="tags"><span class="tag-f">Authentication</span><span class="tag-f">Admin Dashboard</span><span class="tag-f">Payment UI</span></div>
-        <div class="proj-links"><a href="#" class="proj-link pl-gh"><i class="fab fa-github"></i> GitHub</a><a href="#" class="proj-link pl-demo"><i class="fas fa-external-link-alt"></i> Demo</a></div>
+        <div class="proj-title">
+          Front-End Web Developer – Khon Kaen Tourism Website
+        </div>
+
+        <div class="proj-desc">
+          Designed and developed a tourism website for Khon Kaen using HTML, CSS, and JavaScript.
+        </div>
+
+        <div class="tags">
+          <span class="tag-t">Figma</span>
+          <span class="tag-t">UI Design</span>
+          <span class="tag-t">UX Design</span>
+        </div>
+
+        <div class="tags">
+          <span class="tag-f">Wireframe</span>
+          <span class="tag-f">Prototype</span>
+          <span class="tag-f">Mobile App Design</span>
+        </div>
+
+        <div class="proj-links">
+          
+
+          <a href="https://www.figma.com/design/McWHpUBwKlwz4hcdcxE9ZH/Untitled?node-id=0-1&t=8DDHk4AXGKTbvUvd-1" target="_blank" class="proj-link pl-demo">
+            <i class="fab fa-figma"></i> View Figma
+          </a>
+        </div>
       </div>
     </div>
+
     <div class="proj-card reveal">
-      <div class="proj-thumb pt-2">📊</div>
+
+      <a href="https://www.figma.com/proto/r61wRuHsPkzaKqfqmRdRjF/Game?node-id=1-2&p=f&t=Ydan5o58s5pHl1uG-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2" target="_blank" class="proj-thumb-link">
+        <div class="proj-thumb pt-2">🎮</div>
+      </a>
+
       <div class="proj-body">
-        <div class="proj-title">Dashboard Analytics System</div>
-        <div class="proj-desc">Dashboard Analytics สมัยใหม่สำหรับแสดงสถิติธุรกิจแบบ Real-time</div>
-        <div class="tags"><span class="tag-t">React</span><span class="tag-t">Chart.js</span><span class="tag-t">Firebase</span></div>
-        <div class="tags"><span class="tag-f">Real-time Analytics</span><span class="tag-f">Interactive Charts</span><span class="tag-f">User Management</span></div>
-        <div class="proj-links"><a href="#" class="proj-link pl-gh"><i class="fab fa-github"></i> GitHub</a><a href="#" class="proj-link pl-demo"><i class="fas fa-external-link-alt"></i> Demo</a></div>
+        <div class="proj-title">
+          UI/UX Designer – Mobile Game Project
+        </div>
+
+        <div class="proj-desc">
+          Designed the user interface (UI) for a mobile waste collection game application
+          called “Land of Junk” using Figma.
+        </div>
+
+        <div class="tags">
+          <span class="tag-t">Figma</span>
+          <span class="tag-t">UI Design</span>
+          <span class="tag-t">UX Design</span>
+        </div>
+
+        <div class="tags">
+          <span class="tag-f">Wireframe</span>
+          <span class="tag-f">Prototype</span>
+          <span class="tag-f">Mobile App Design</span>
+        </div>
+
+        <div class="proj-links">
+          <a href="https://www.figma.com/proto/r61wRuHsPkzaKqfqmRdRjF/Game?node-id=1-2&p=f&t=Ydan5o58s5pHl1uG-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2k" target="_blank" class="proj-link pl-demo">
+            <i class="fab fa-figma"></i> View Figma
+          </a>
+        </div>
       </div>
     </div>
-    <div class="proj-card reveal">
-      <div class="proj-thumb pt-3">🛍️</div>
-      <div class="proj-body">
-        <div class="proj-title">E-Commerce Website</div>
-        <div class="proj-desc">เว็บไซต์ช้อปปิ้งออนไลน์แบบ Responsive พร้อม UI สะอาดตา</div>
-        <div class="tags"><span class="tag-t">React</span><span class="tag-t">Tailwind CSS</span><span class="tag-t">Firebase</span></div>
-        <div class="tags"><span class="tag-f">Product Catalog</span><span class="tag-f">Shopping Cart</span><span class="tag-f">Mobile Ready</span></div>
-        <div class="proj-links"><a href="#" class="proj-link pl-gh"><i class="fab fa-github"></i> GitHub</a><a href="#" class="proj-link pl-demo"><i class="fas fa-external-link-alt"></i> Demo</a></div>
-      </div>
-    </div>
+
   </div>
 </section>
 
@@ -316,7 +402,7 @@
       <div class="edu-year">2022 — 2025</div>
       <div class="edu-degree">Bachelor of Information Technology</div>
       <div class="edu-school">College of Computing, Khon Kaen University</div>
-      <div class="edu-gpa">GPA 2.69</div>
+      <div class="edu-gpa">GPA 2.71</div>
       <div class="course-row">
         <span class="course-pill">Web Development</span><span class="course-pill">UX/UI Design</span>
         <span class="course-pill">Database Systems</span><span class="course-pill">Mobile App Dev</span>
@@ -327,7 +413,7 @@
       <div class="edu-year">2015 — 2021</div>
       <div class="edu-degree">High School — Science-Mathematics Program</div>
       <div class="edu-school">Kaennakhon Witthayalai School</div>
-      <div class="edu-gpa">GPA 3.60</div>
+      <div class="edu-gpa">GPA 3.59</div>
       <div class="course-row">
         <span class="course-pill">Mathematics</span><span class="course-pill">Physics</span>
         <span class="course-pill">Chemistry</span><span class="course-pill">Computer Science</span>
@@ -350,8 +436,6 @@
         <div><span class="c-lbl">Phone</span><span class="c-val">091-064-5971</span></div>
       </a>
       <div class="soc-row">
-        <a href="#" class="soc-btn" title="GitHub"><i class="fab fa-github"></i></a>
-        <a href="#" class="soc-btn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
         <a href="#" class="soc-btn" title="Facebook"><i class="fab fa-facebook-f"></i></a>
       </div>
     </div>
@@ -369,8 +453,6 @@
 <footer>
   <div class="footer-copy">© 2025 Khwannet Suwannasri</div>
   <div style="display:flex;gap:7px;align-items:center">
-    <a href="#" class="soc-btn"><i class="fab fa-github"></i></a>
-    <a href="#" class="soc-btn"><i class="fab fa-linkedin-in"></i></a>
     <a href="#hero" class="back-top"><i class="fas fa-arrow-up"></i></a>
   </div>
 </footer>
@@ -404,16 +486,22 @@ document.getElementById('qrClose').addEventListener('click', () => overlay.class
 overlay.addEventListener('click', e => { if (e.target === overlay) overlay.classList.remove('open'); });
 
 function drawQR() {
-  const url = window.location.href;
+  const url = "https://resume-khwannet.netlify.app/";
   document.getElementById('qrUrlText').textContent = url;
+
   const img = new Image();
   img.crossOrigin = 'anonymous';
+
   img.onload = () => {
     const ctx = document.getElementById('qrCanvas').getContext('2d');
     ctx.clearRect(0,0,176,176);
     ctx.drawImage(img,0,0,176,176);
   };
-  img.src = 'https://api.qrserver.com/v1/create-qr-code/?size=176x176&data=' + encodeURIComponent(url) + '&bgcolor=f4f2ee&color=2c2820&margin=4';
+
+  img.src =
+    'https://api.qrserver.com/v1/create-qr-code/?size=176x176&data='
+    + encodeURIComponent(url)
+    + '&bgcolor=f4f2ee&color=2c2820&margin=4';
 }
 </script>
 </body>

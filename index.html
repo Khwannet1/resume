@@ -469,7 +469,7 @@
   </div> -->
 </div>
 
-<!-- <script>
+<script>
 const obs = new IntersectionObserver(entries => {
   entries.forEach(e => {
     if (e.isIntersecting) {
@@ -481,29 +481,29 @@ const obs = new IntersectionObserver(entries => {
 }, { threshold: 0.1 });
 document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
 
-const overlay = document.getElementById('qrOverlay');
-document.getElementById('qrFab').addEventListener('click', () => { overlay.classList.add('open'); drawQR(); });
-document.getElementById('qrClose').addEventListener('click', () => overlay.classList.remove('open'));
-overlay.addEventListener('click', e => { if (e.target === overlay) overlay.classList.remove('open'); });
+// const overlay = document.getElementById('qrOverlay');
+// document.getElementById('qrFab').addEventListener('click', () => { overlay.classList.add('open'); drawQR(); });
+// document.getElementById('qrClose').addEventListener('click', () => overlay.classList.remove('open'));
+// overlay.addEventListener('click', e => { if (e.target === overlay) overlay.classList.remove('open'); });
 
-function drawQR() {
-  const url = "https://lively-cocada-07426c.netlify.app/";
-  document.getElementById('qrUrlText').textContent = url;
+// function drawQR() {
+//   const url = "https://lively-cocada-07426c.netlify.app/";
+//   document.getElementById('qrUrlText').textContent = url;
 
-  const img = new Image();
-  img.crossOrigin = 'anonymous';
+//   const img = new Image();
+//   img.crossOrigin = 'anonymous';
 
-  img.onload = () => {
-    const ctx = document.getElementById('qrCanvas').getContext('2d');
-    ctx.clearRect(0,0,176,176);
-    ctx.drawImage(img,0,0,176,176);
-  };
+//   img.onload = () => {
+//     const ctx = document.getElementById('qrCanvas').getContext('2d');
+//     ctx.clearRect(0,0,176,176);
+//     ctx.drawImage(img,0,0,176,176);
+//   };
 
-  img.src =
-    'https://api.qrserver.com/v1/create-qr-code/?size=176x176&data='
-    + encodeURIComponent(url)
-    + '&bgcolor=f4f2ee&color=2c2820&margin=4';
-}
-</script> -->
+//   img.src =
+//     'https://api.qrserver.com/v1/create-qr-code/?size=176x176&data='
+//     + encodeURIComponent(url)
+//     + '&bgcolor=f4f2ee&color=2c2820&margin=4';
+// }
+</script>
 </body>
 </html>
